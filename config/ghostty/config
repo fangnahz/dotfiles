@@ -1,0 +1,53 @@
+# appearance
+# theme = TokyoNight Storm
+theme = Apple Classic
+background-opacity = 0.85
+background-blur-radius = 16
+font-family = JetBrainsMono Nerd Font
+font-family = Noto Sans Mono CJK SC
+# font-family = Sarasa Mono SC Nerd Font
+font-size = 16
+cursor-style = block
+cursor-style-blink = false
+cursor-invert-fg-bg = true
+mouse-hide-while-typing = true
+
+# macOS-specific settings
+macos-titlebar-style = tabs
+macos-option-as-alt = true
+
+# window controls
+confirm-close-surface = true
+# window-title-font-family = VictorMono NFM Italic
+window-decoration = true
+window-padding-x = 2
+window-padding-y = 2
+window-padding-balance = true
+window-save-state = always
+
+# auto update settings
+auto-update = download
+auto-update-channel = stable
+
+# extras
+shell-integration-features = true
+copy-on-select = clipboard
+focus-follows-mouse = true
+link-url = true
+
+# Word navigation
+keybind = opt+arrow_left=text:\x1bb
+keybind = opt+arrow_right=text:\x1bf
+keybind = opt+backspace=text:\x17
+
+# Line navigation
+keybind = cmd+arrow_left=csi:H
+keybind = cmd+arrow_right=csi:F
+keybind = cmd+backspace=text:\x15
+
+# Global hotkey (works anywhere)
+keybind = global:cmd+`=toggle_quick_terminal
+# Dropdown position
+quick-terminal-position = top
+# Size: for top/bottom, the primary axis is HEIGHT
+quick-terminal-size = 45%
