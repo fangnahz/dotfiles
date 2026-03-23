@@ -1,9 +1,13 @@
 [core]
-	quotePath = false
+    quotePath = false
 [user]
-	name = Zhang, Fan
-	email = zhangfan@yiwise.com
+    name = Zhang, Fan
+    email = zhangfan@yiwise.com
 [merge]
-	tool = nvimdiff
+    tool = nvimdiff
 [mergetool "nvimdiff"]
-	cmd = nvim -d \"$LOCAL\" \"$BASE\" \"$REMOTE\" \"$MERGED\"
+    cmd = nvim -d \"$LOCAL\" \"$BASE\" \"$REMOTE\" \"$MERGED\"
+[push]
+    autoSetupRemote = true
+[color]
+    ui = auto
