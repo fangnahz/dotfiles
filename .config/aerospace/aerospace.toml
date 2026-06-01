@@ -203,7 +203,7 @@ alt-v = 'workspace V'
 alt-w = 'workspace W'
 alt-x = 'workspace X'
 alt-y = 'workspace Y'
-alt-z = 'workspace Z'
+# alt-z = 'workspace Z'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1'
@@ -236,7 +236,7 @@ alt-shift-v = 'move-node-to-workspace V'
 alt-shift-w = 'move-node-to-workspace W'
 alt-shift-x = 'move-node-to-workspace X'
 alt-shift-y = 'move-node-to-workspace Y'
-alt-shift-z = 'move-node-to-workspace Z'
+# alt-shift-z = 'move-node-to-workspace Z'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
@@ -283,16 +283,16 @@ run = "move-node-to-workspace B"
 
 [[on-window-detected]]
 if.app-id = 'com.alibaba.DingTalkMac'
-run = "move-node-to-workspace I"
+run = "move-node-to-workspace M"
 
 [[on-window-detected]]
 if.app-id = 'com.tencent.xinWeChat'
-run = "move-node-to-workspace I"
+run = "move-node-to-workspace M"
 
 [[on-window-detected]]
 if.app-id = 'com.electron.lark'
-run = "move-node-to-workspace I"
+run = "move-node-to-workspace M"
 
 [[on-window-detected]]
 if.app-id = 'org.whispersystems.signal-desktop'
-run = "move-node-to-workspace I"
+run = "move-node-to-workspace M"

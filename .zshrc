@@ -152,11 +152,11 @@ claude_status() {
   echo "AUTH_TOKEN: ${ANTHROPIC_AUTH_TOKEN:+<set>}${ANTHROPIC_AUTH_TOKEN:-<unset>}"
 }
 
-jump() { TERM=xterm-256color ssh -tt jump; }
+jump() { TERM=xterm-256color ssh -tt jump-server; }
 
 lab() { source ~/.venvs/lab/bin/activate; }
-alias labpy="~/.venvs/lab/bin/python"
-alias labip="~/.venvs/lab/bin/ipython"
+alias pylab="~/.venvs/lab/bin/python"
+alias pyip="~/.venvs/lab/bin/ipython"
 
 gbdel() {
   echo "+ git fetch -p"
