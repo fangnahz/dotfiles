@@ -62,6 +62,10 @@ label = 'Browsers'
     key = 's'
     url = 'tuna://run/TunaCore.SystemApplicationsCatalog.Safari/Open'
 
+    [[leaderMode.bindings.children]]
+    key = 'z'
+    url = 'tuna://run/TunaCore.AllApplicationsCatalog.Zen/Open'
+
 [[leaderMode.bindings]]
 iconPath = 'camera.metering.center.weighted.average'
 key = 'c'
@@ -185,9 +189,9 @@ key = 's'
 label = 'Search'
 
     [[leaderMode.bindings.children]]
-    iconPath = 'bookmark'
+    iconPath = '/Applications/Brave Browser.app'
     key = 'b'
-    label = 'Browser Bookmarks'
+    label = 'Brave Bookmarks'
     url = 'tuna://run/url.raycast:%252F%252Fextensions%252Fraycast%252Fbrowser-bookmarks%252Findex/Open%20URL'
 
     [[leaderMode.bindings.children]]
@@ -207,6 +211,12 @@ label = 'Search'
     key = 'w'
     label = 'Switch Windows (Tabs)'
     url = 'tuna://run/url.raycast:%252F%252Fextensions%252Fraycast%252Fnavigation%252Fswitch-windows/Open%20URL'
+
+    [[leaderMode.bindings.children]]
+    iconPath = '/Applications/Zen.app'
+    key = 'z'
+    label = 'Zen Bookmarks'
+    url = 'tuna://run/url.raycast:%252F%252Fextensions%252FKeyruu%252Fzen-browser%252Fsearch-bookmarks/Open%20URL'
 
 [[leaderMode.bindings]]
 iconPath = 'rectangle.grid.2x2'

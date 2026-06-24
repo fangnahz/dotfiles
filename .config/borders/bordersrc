@@ -1,6 +1,7 @@
 #!/bin/bash
 
-source "$HOME/.config/sketchybar/colors.sh"
+BORDER_ACTIVE_COLOR=0xff0076ff
+BORDER_BACKGROUND_COLOR=0x000000
 
 options=(
   style=round

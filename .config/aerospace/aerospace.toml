@@ -5,7 +5,6 @@ config-version = 2
 # You can use it to add commands that run after AeroSpace startup.
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
-  'exec-and-forget sketchybar',
   'exec-and-forget borders',
 ]
 
@@ -79,24 +78,6 @@ persistent-workspaces = [
   "Z",
 ]
 
-# Hooks
-exec-on-workspace-change = [
-  '/bin/bash',
-  '-c',
-  'sketchybar --trigger aerospace_workspace_change',
-]
-
-on-focus-changed = [
-  'exec-and-forget sketchybar --trigger aerospace_workspace_change',
-  'exec-and-forget sketchybar --trigger aerospace_mode_changed',
-]
-# A callback that runs every time binding mode changes
-# See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
-# See: https://nikitabobko.github.io/AeroSpace/commands#mode
-on-mode-changed = [
-  'exec-and-forget sketchybar --trigger aerospace_mode_changed',
-]
-
 # Possible values: (qwerty|dvorak|colemak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
 [key-mapping]
@@ -115,7 +96,7 @@ inner.horizontal = 8
 inner.vertical = 8
 outer.left = 8
 outer.bottom = 8
-outer.top = 42
+outer.top = 8
 outer.right = 8
 
 # 'main' binding mode declaration
@@ -276,23 +257,3 @@ run = "layout floating"
 [[on-window-detected]]
 if.app-id = 'com.apple.Preview'
 run = "layout floating"
-
-[[on-window-detected]]
-if.app-id = 'com.brave.Browser'
-run = "move-node-to-workspace B"
-
-[[on-window-detected]]
-if.app-id = 'com.alibaba.DingTalkMac'
-run = "move-node-to-workspace M"
-
-[[on-window-detected]]
-if.app-id = 'com.tencent.xinWeChat'
-run = "move-node-to-workspace M"
-
-[[on-window-detected]]
-if.app-id = 'com.electron.lark'
-run = "move-node-to-workspace M"
-
-[[on-window-detected]]
-if.app-id = 'org.whispersystems.signal-desktop'
-run = "move-node-to-workspace M"
