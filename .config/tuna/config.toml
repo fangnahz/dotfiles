@@ -151,8 +151,9 @@ label = 'IM'
     url = 'tuna://run/TunaCore.AllApplicationsCatalog.Signal/Open'
 
     [[comboMode.bindings.children]]
+    iconPath = '/Applications/WeChat.app'
     key = 'w'
-    url = 'tuna://run/TunaCore.AllApplicationsCatalog.WeChat/Open'
+    url = 'tuna://run/TunaCore.ApplicationsCatalog.WeChat/TunaCore.CommonActionsCatalog.Open'
 
 [[comboMode.bindings]]
 iconPath = '/Applications/Raycast.app'
