@@ -230,21 +230,6 @@ label = 'Aerospace'
     url = 'tuna://run/text.aerospace%2520flatten-workspace-tree/Run%20Text%20as%20Shell%20Command'
 
     [[comboMode.bindings.children]]
-    key = 'i'
-    label = 'Increase Tile Size'
-    url = 'tuna://run/text.aerospace%2520resize%2520smart%2520%252B50/Run%20Text%20as%20Shell%20Command'
-
-    [[comboMode.bindings.children]]
-    key = 'd'
-    label = 'Decrease Tile Size'
-    url = 'tuna://run/text.aerospace%2520resize%2520smart%2520-50/Run%20Text%20as%20Shell%20Command'
-
-    [[comboMode.bindings.children]]
-    key = 'e'
-    label = 'Equalize Tile Sizes'
-    url = 'tuna://run/text.aerospace%2520balance-sizes/Run%20Text%20as%20Shell%20Command'
-
-    [[comboMode.bindings.children]]
     iconPath = 'app.connected.to.app.below.fill'
     key = 'j'
     label = 'Join with ...'
