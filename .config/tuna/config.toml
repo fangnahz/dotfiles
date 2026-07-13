@@ -125,13 +125,14 @@ key = 'm'
 label = 'IM'
 
     [[comboMode.bindings.children]]
+    iconPath = '/Applications/DingTalk.app'
     key = 'd'
-    url = 'tuna://run/TunaCore.AllApplicationsCatalog.DingTalk/Open'
+    url = 'tuna://run/TunaCore.ApplicationsCatalog.DingTalk/TunaCore.CommonActionsCatalog.Open'
 
     [[comboMode.bindings.children]]
     iconPath = '/Applications/Lark.app'
     key = 'f'
-    url = 'tuna://run/TunaCore.AllApplicationsCatalog.Lark/Open'
+    url = 'tuna://run/TunaCore.ApplicationsCatalog.Lark/TunaCore.CommonActionsCatalog.Open'
 
     [[comboMode.bindings.children]]
     iconPath = 'message'
@@ -366,7 +367,7 @@ label = 'Terminals'
     iconPath = '/Applications/Ghostty.app'
     key = 'g'
     label = 'Ghostty'
-    url = 'tuna://run/TunaCore.AllApplicationsCatalog.Ghostty/Open'
+    url = 'tuna://run/TunaCore.ApplicationsCatalog.Ghostty/TunaCore.CommonActionsCatalog.Open'
 
     [[comboMode.bindings.children]]
     key = 'c'
