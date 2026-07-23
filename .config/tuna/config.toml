@@ -14,53 +14,6 @@ sortOrders = []
     selectedItemKeys = []
 
 [[comboMode.bindings]]
-iconPath = 'cat'
-key = 'a'
-label = 'Apps'
-
-    [[comboMode.bindings.children]]
-    key = 'c'
-    url = 'tuna://run/TunaCore.SystemApplicationsCatalog.Calendar/Open'
-
-    [[comboMode.bindings.children]]
-    key = 'f'
-    url = 'tuna://run/path.%252FSystem%252FLibrary%252FCoreServices%252FFinder.app/Open'
-
-    [[comboMode.bindings.children]]
-    key = 'g'
-    url = 'tuna://run/TunaCore.AllApplicationsCatalog.ChatGPT/Open'
-
-    [[comboMode.bindings.children]]
-    key = 'n'
-    url = 'tuna://run/path.%252FSystem%252FApplications%252FNotes.app/Open'
-
-    [[comboMode.bindings.children]]
-    key = 'o'
-    url = 'tuna://run/TunaCore.AllApplicationsCatalog.Obsidian/Open'
-
-    [[comboMode.bindings.children]]
-    key = 'p'
-    url = 'tuna://run/TunaCore.AllApplicationsCatalog.Clash%20Party/Open'
-
-[[comboMode.bindings]]
-iconPath = 'safari'
-key = 'b'
-label = 'Browsers'
-
-    [[comboMode.bindings.children]]
-    key = 'b'
-    label = 'Brave Browser'
-    url = 'tuna://run/TunaCore.AllApplicationsCatalog.Brave%20Browser/Open'
-
-    [[comboMode.bindings.children]]
-    key = 's'
-    url = 'tuna://run/TunaCore.SystemApplicationsCatalog.Safari/Open'
-
-    [[comboMode.bindings.children]]
-    key = 'z'
-    url = 'tuna://run/TunaCore.AllApplicationsCatalog.Zen/Open'
-
-[[comboMode.bindings]]
 iconPath = 'camera.metering.center.weighted.average'
 key = 'c'
 label = 'Capture (Screenshot)'
@@ -76,108 +29,6 @@ label = 'Capture (Screenshot)'
     key = 'd'
     label = 'to Download Folder'
     url = 'tuna://run/url.raycast:%252F%252Fextensions%252FAayush9029%252Fscreenshot%252Fcapture-area/Open%20URL'
-
-[[comboMode.bindings]]
-iconPath = 'bookmark'
-key = 'f'
-label = 'Folders'
-
-    [[comboMode.bindings.children]]
-    key = 'a'
-    url = 'tuna://run/path.%252FApplications/Open'
-
-    [[comboMode.bindings.children]]
-    key = 'd'
-    url = 'tuna://run/path.%252FUsers%252Fzhangfan%252FDocuments/Open'
-
-    [[comboMode.bindings.children]]
-    key = 'h'
-    url = 'tuna://run/path.%252FUsers%252Fzhangfan/Open'
-
-    [[comboMode.bindings.children]]
-    key = 'l'
-    url = 'tuna://run/path.%252FUsers%252Fzhangfan%252FDownloads/Open'
-
-[[comboMode.bindings]]
-iconPath = 'hammer'
-key = 'i'
-label = 'IDEs'
-
-    [[comboMode.bindings.children]]
-    key = 'c'
-    url = 'tuna://run/TunaCore.AllApplicationsCatalog.Cursor/Open'
-
-    [[comboMode.bindings.children]]
-    key = 't'
-    url = 'tuna://run/TunaCore.AllApplicationsCatalog.Trae/Open'
-
-    [[comboMode.bindings.children]]
-    key = 'v'
-    url = 'tuna://run/TunaCore.AllApplicationsCatalog.Visual%20Studio%20Code/Open'
-
-    [[comboMode.bindings.children]]
-    key = 'x'
-    url = 'tuna://run/TunaCore.AllApplicationsCatalog.Xcode/Open'
-
-[[comboMode.bindings]]
-iconPath = 'message'
-key = 'm'
-label = 'IM'
-
-    [[comboMode.bindings.children]]
-    iconPath = '/Applications/DingTalk.app'
-    key = 'd'
-    url = 'tuna://run/TunaCore.ApplicationsCatalog.DingTalk/TunaCore.CommonActionsCatalog.Open'
-
-    [[comboMode.bindings.children]]
-    iconPath = '/Applications/Lark.app'
-    key = 'f'
-    url = 'tuna://run/TunaCore.ApplicationsCatalog.Lark/TunaCore.CommonActionsCatalog.Open'
-
-    [[comboMode.bindings.children]]
-    iconPath = 'message'
-    key = 'q'
-
-        [[comboMode.bindings.children.children]]
-        iconPath = "/Applications/\u4F01\u4E1A\u5FAE\u4FE1.app"
-        key = 'w'
-        url = 'tuna://run/TunaCore.AllApplicationsCatalog.WeCom/Open'
-
-        [[comboMode.bindings.children.children]]
-        key = 'q'
-        url = 'tuna://run/TunaCore.AllApplicationsCatalog.QQ/Open'
-
-    [[comboMode.bindings.children]]
-    key = 's'
-    url = 'tuna://run/TunaCore.AllApplicationsCatalog.Signal/Open'
-
-    [[comboMode.bindings.children]]
-    iconPath = '/Applications/WeChat.app'
-    key = 'w'
-    url = 'tuna://run/TunaCore.ApplicationsCatalog.WeChat/TunaCore.CommonActionsCatalog.Open'
-
-[[comboMode.bindings]]
-iconPath = '/Applications/Raycast.app'
-key = 'r'
-label = 'Raycast'
-
-    [[comboMode.bindings.children]]
-    iconPath = 'party.popper'
-    key = 'c'
-    label = 'confetti'
-    url = 'tuna://run/url.raycast:%252F%252Fextensions%252Fraycast%252Fraycast%252Fconfetti/Open%20URL'
-
-    [[comboMode.bindings.children]]
-    iconPath = 'face.smiling'
-    key = 'e'
-    label = 'emoji-search'
-    url = 'tuna://run/url.raycast:%252F%252Fextensions%252Fraycast%252Femoji-symbols%252Fsearch-emoji-symbols/Open%20URL'
-
-    [[comboMode.bindings.children]]
-    iconPath = '/Applications/SF Symbols.app'
-    key = 's'
-    label = 'sf-search'
-    url = 'tuna://run/url.raycast:%252F%252Fextensions%252Fjffrykkn%252Fsf-symbols-search%252Findex/Open%20URL'
 
 [[comboMode.bindings]]
 iconPath = 'magnifyingglass'
@@ -359,26 +210,6 @@ label = 'Aerospace'
         url = 'tuna://run/text.aerospace%2520move-node-to-workspace%2520X%2520--focus-follows-window/Run%20Text%20as%20Shell%20Command'
 
 [[comboMode.bindings]]
-iconPath = 'apple.terminal'
-key = 't'
-label = 'Terminals'
-
-    [[comboMode.bindings.children]]
-    iconPath = '/Applications/Ghostty.app'
-    key = 'g'
-    label = 'Ghostty'
-    url = 'tuna://run/TunaCore.ApplicationsCatalog.Ghostty/TunaCore.CommonActionsCatalog.Open'
-
-    [[comboMode.bindings.children]]
-    key = 'c'
-    label = 'Cmux'
-    url = 'tuna://run/TunaCore.AllApplicationsCatalog.cmux/Open'
-
-    [[comboMode.bindings.children]]
-    key = 't'
-    url = 'tuna://run/TunaCore.SystemApplicationsCatalog.Terminal/Open'
-
-[[comboMode.bindings]]
 iconPath = 'gamecontroller'
 key = 'up'
 label = '???'
@@ -429,7 +260,7 @@ label = 'Settings'
     [[comboMode.bindings.children]]
     key = ','
     label = 'system-settings'
-    url = 'tuna://run/TunaCore.SystemApplicationsCatalog.System%20Settings/Open'
+    url = 'tuna://run/TunaCore.ApplicationsCatalog.System%20Settings/TunaCore.CommonActionsCatalog.Open'
 
     [[comboMode.bindings.children]]
     iconPath = 'power'
