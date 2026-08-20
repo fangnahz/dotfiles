@@ -115,9 +115,6 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Load Claude secrets
-[[ -f "$HOME/.claude_env" ]] && source "$HOME/.claude_env"
-
 if [[ -d /opt/homebrew/bin ]]; then
   export PATH="/opt/homebrew/bin:$PATH"
 fi
@@ -125,32 +122,6 @@ fi
 export GIT_PAGER=cat
 export JUPYTER_PLATFORM_DIRS=1
 export UV_PYTHON_INSTALL=auto
-
-# Claude 配置函数
-# Claude: 配置一知 OpenRouter API
-claude_use_openrouter() {
-  export ANTHROPIC_BASE_URL="$OPENROUTER_BASE_URL"
-  export ANTHROPIC_AUTH_TOKEN="$OPENROUTER_API_KEY"
-  export ANTHROPIC_API_KEY=""   # Required for Claude Code + OpenRouter
-  echo "Claude → OpenRouter"
-}
-# Claude: 配置个人 MoaCode API
-claude_use_moacode() {
-  export ANTHROPIC_BASE_URL="$MOACODE_BASE_URL"
-  export ANTHROPIC_AUTH_TOKEN="$MOACODE_API_KEY"
-  export ANTHROPIC_API_KEY=""
-  echo "Claude → Moacode"
-}
-# Claude: 清除配置
-claude_unset() {
-  unset ANTHROPIC_BASE_URL ANTHROPIC_AUTH_TOKEN ANTHROPIC_API_KEY
-  echo "Claude provider unset"
-}
-# Claude: 打印当前配置
-claude_status() {
-  echo "BASE_URL: ${ANTHROPIC_BASE_URL:-<unset>}"
-  echo "AUTH_TOKEN: ${ANTHROPIC_AUTH_TOKEN:+<set>}${ANTHROPIC_AUTH_TOKEN:-<unset>}"
-}
 
 jump() { TERM=xterm-256color ssh -tt jump-server; }
 
